@@ -15,9 +15,11 @@ class DocumentManager {
   /**
    * 문서 셋을 지정한다.
    */
-  void addDocument(String document) {
+  void updateDocument(String document) {
     this._lines = [];
-    this._lines.addAll(document.split("\\n"));
+    for(var line in document.split("\\n")) {
+      this.addLine(line);
+    }
   }
   
   /**

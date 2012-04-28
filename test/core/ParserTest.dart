@@ -30,7 +30,8 @@ void main() {
     print(i);
   }
   
-  var result = const Api().search('i');
+  print('****시작');
+  var result = const Api().search('M');
   for(var i in result) {
     print(i);
   }

@@ -11,4 +11,8 @@ class Api {
   List search(String term) {
     return this._dicManager.search(term);
   }
+  
+  void updateDocument(String document) {
+    this._docManager.updateDocument(document);
+  }
 }
