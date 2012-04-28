@@ -1,8 +1,8 @@
 #import('dart:html');
 
-class DartComplete {
+class dart_complete {
 
-  DartComplete() {
+  dart_complete() {
   }
 
   void run() {
@@ -16,5 +16,5 @@ class DartComplete {
 }
 
 void main() {
-  new DartComplete().run();
+  new dart_complete().run();
 }
