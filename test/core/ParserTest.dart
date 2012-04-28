@@ -1,5 +1,9 @@
 #import('dart:html');
 #source('../../core/Parser.dart');
+#source('../../core/DictionaryManager.dart');
+#source('../../core/DocumentManager.dart');
+#source("../../core/Dictionary.dart");
+#source("../../core/Api.dart");
 
 class ParserTest {
 
@@ -20,4 +24,14 @@ class ParserTest {
 
 void main() {
   new ParserTest().run();
+  var list = ['baa', 'abb', 'abc', 'aba'];
+  var filtered = list.filter((t) => t.startsWith('b'));
+  for(var i in filtered) {
+    print(i);
+  }
+  
+  var result = const Api().search('i');
+  for(var i in result) {
+    print(i);
+  }
 }
